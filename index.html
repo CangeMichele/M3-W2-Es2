@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Piacere Viaggiare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--navbar-->
+    <nav class="navbar fixed-top  border  navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="Logo" width="50" height="50" class="d-inline-block">
+                Piacere Viaggiare
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#offerWeek">Offerta della Settimana</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#welcomeSummer">Welcome Summer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-none d-md-block" href="#daily">Offerta del giorno</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lastMinutes">Last Minutes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonial">Testimonial</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!--Jumbotron-->
+        <div class="row" id="jumbotron">
+            <div class="col">
+                <div class="card position-relative">
+                    <img src="assets/jumbo2.jpg" class="img-fluid rounded-start" alt="payoff">
+                    <div class="card-img-overlay">
+                        <div class="jumbo-card-text text-center position-absolute top-50 start-50 translate-middle ">
+                            <h1 class="card-title">Piacere Viaggiare</h1>
+                            <h4 class="card-text bottom-50">Esplora la tua prossima vacanza !</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jumbotron -->
+
+        <!-- offert-week -->
+        <div class="row row-title">
+            <div class="col-9">
+                <h1 class="text-center ">Offerte della Settimana</h1>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#offerWeek"
+                    aria-expanded="true" aria-controls="offerWeek" id="offerWeek-btm"
+                    onclick="openClose('offerWeek-btm')">chiudi</button>
+            </div>
+        </div>
+        <div class="row offer-week show" id="offerWeek">
+            <div class="col-12">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="assets/borgo.jpeg" class="card-img-top" alt="Borgo Bello">
+                    <div class="card-body">
+                        <h5 class="card-title">Borgo Bello</h5>
+                        <p class="card-text">Un borgo incantevole, con stradine acciottolate, case colorate e profumo di
+                            storia nell’aria.</p>
+                        <p><small class="text-secondary">a partire da 60€</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="assets/montagna.jpeg" class="card-img-top" alt="Monti Fraimonti">
+                    <div class="card-body">
+                        <h5 class="card-title">Monti Fraimonti</h5>
+                        <p class="card-text">Un paesaggio di montagna si estende davanti a te: vette imponenti, boschi
+                            fitti, e laghi cristallini.</p>
+                        <p><small class="text-secondary">a partire da 110 €</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="assets/città.jpeg" class="card-img-top" alt="Città Laggiù">
+                    <div class="card-body">
+                        <h5 class="card-title">Città Laggiù</h5>
+                        <p class="card-text">Vieni a scoprire una metropoli vibrante con grattacieli ardenti, cultura
+                            multiforme e opportunità infinite.</p>
+                        <p><small class="text-secondary">a partire da 80 €</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="assets/mare.jpeg" class="card-img-top" alt="Miramare Quantebbello">
+                    <div class="card-body">
+                        <h5 class="card-title">Miromar Quantebel</h5>
+                        <p class="card-text">
+                            Un’incantevole insenatura, avvolta da scogli e circondata da acque turchesi, offre un
+                            rifugio sereno e suggestivo.</p>
+                        <p><small class="text-secondary">a partire da 100 €</small></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- offer-week -->
+
+        <!-- Welcome Summer-->
+        <div class="row row-title">
+            <div class="col-9">
+                <h1 class="text-center">Welcome Summer</h1>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#welcomeSummer"
+                    aria-expanded="true" aria-controls="welcomeSummer" id="welcomeSummer-btm"
+                    onclick="openClose('welcomeSummer-btm')">chiudi</button>
+            </div>
+        </div>
+
+        <div class="row welcomeSummer show" id="welcomeSummer">
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card shadow-lg p-3">
+                    <h5 class="card-title text-center">Mare Bello</h5>
+                    <img src="assets/summer1.jpeg" class="card-img-top" alt="Mare Bello">
+                    <footer class="card-footer text-secondary"><small>a partire da 100€</small> </footer>
+
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card shadow-lg p-3">
+                    <h5 class="card-title text-center">Borgo Mare</h5>
+                    <img src="assets/summer2.jpeg" class="card-img-top" alt="Borgo Mare">
+                    <footer class="card-footer text-secondary"><small>a partire da 100€</small> </footer>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card shadow-lg p-3">
+                    <h5 class="card-title text-center">Spiaggia Sassi</h5>
+                    <img src="assets/summer3.jpeg" class="card-img-top" alt="Spiaggia Sassi">
+                    <footer class="card-footer text-secondary"><small>a partire da 100€</small> </footer>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card shadow-lg p-3">
+                    <h5 class="card-title text-center">Caletta</h5>
+                    <img src="assets/summer4.jpeg" class="card-img-top" alt="Caletta">
+                    <footer class="card-footer text-secondary"><small>a partire da 100€</small> </footer>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card shadow-lg p-3">
+                    <h5 class="card-title text-center">Spartimare</h5>
+                    <img src="assets/summer5.jpeg" class="card-img-top" alt="Spartimare">
+                    <footer class="card-footer text-secondary"><small>a partire da 100€</small> </footer>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card shadow-lg p-3">
+                    <h5 class="card-title text-center">Spiaggiamare</h5>
+                    <img src="assets/summer6.jpeg" class="card-img-top" alt="Spiaggiamare">
+                    <footer class="card-footer text-secondary"><small>a partire da 100€</small> </footer>
+                </div>
+            </div>
+        </div>
+        <!-- Welcome Summer -->
+
+        <!-- Daily -->
+        <div class="d-none d-md-block">
+            <div class="row row-title">
+                <div class="col-9">
+                    <h1 class="text-center">Solo per oggi !</h1>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#daily"
+                        aria-expanded="true" aria-controls="daily" id="daily-btm"
+                        onclick="openClose('daily-btm')">chiudi</button>
+                </div>
+            </div>
+            <div class="row daily show" id="daily">
+                <div class="col">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <img src="assets/daily.jpeg" class="img-fluid rounded-start" alt="Caraibi">
+                            </div>
+                            <div class="col-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">solo per oggi !</h5>
+                                    <h3 class="card-title">Caraibi</h3>
+                                    <p class="card-text">Se sogni acque turchesi e spiagge di sabbia bianca, i
+                                        Caraibi
+                                        sono la tua destinazione ideale! Esplora le isole paradisiache, immergiti in
+                                        barriere coralline, sorseggia una birra locale al Captain Oak’s Tiki Bar
+                                        alle
+                                        Turks e Caicos, e rilassati sulla spiaggia di Store Bay a Tobago. 🌴🌊</p>
+                                    <p class="card-text"><small class="text-body-secondary">a partire da 1100 €</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Daily-->
+
+        <!--lastMinutes-->
+        <div class="row row-title last-minutes">
+            <div class="col-9">
+                <h1 class="text-center">Last minutes </h1>
+                <h4>scade fra 3 giorni !</h4>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#lastMinutes"
+                    aria-expanded="true" aria-controls="lastMinutes" id="lastMinutes-btm"
+                    onclick="openClose('lastMinutes-btm')">chiudi</button>
+            </div>
+        </div>
+        <div class="row show" id="lastMinutes">
+            <div class="col">
+                <div class="card rounded-4">
+                    <div class="card-title text-center">
+                        <h4>Tenerife</h4>
+                    </div>
+                    <img src="assets/lastminutes1.jpg" class="card-img-top" alt="Tenerife">
+                    <div class="card-body rounded-4">
+                        <p class="card-text">
+                            Esplora Tenerife: spiagge dorate, vulcani maestosi, cibo delizioso. Prenota ora! 🌴🌋🍹 .
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Volo + Hotel 500€</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card rounded-4">
+                    <div class="card-title text-center">
+                        <h4>Cappadocia</h4>
+                    </div>
+                    <img src="assets/lastminutes2.jpg" class="card-img-top" alt="Tenerife">
+                    <div class="card-body rounded-4">
+                        <p class="card-text">
+                            Esplora la magica Cappadocia: paesaggi lunari, città sotterranee, avventura senza pari.
+                            Prenota ora! 🌄🏰🎈
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Volo + Hotel 700€</small></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--lastMinutes-->
+
+        <!-- Testimonial -->
+        <div class="testimonial border p-5 pt-3 rounded-4">
+            <div class="row row-title">
+                <div class="col-9 pb-2">
+                    <h1>Testimonial </h1>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#testimonial" aria-expanded="true" aria-controls="testimonial"
+                        id="testimonial-btm" onclick="openClose('testimonial-btm')">chiudi</button>
+                </div>
+            </div>
+
+            <div id="testimonial" class="row show row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title d-inline-block align-middle ">
+                                <div class="imgUtente d-inline-block rounded-circle align-middle m-2 "></div>
+                                Eccellente servizio!
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, veniam
+                                magnam! Est sed vitae maiores, quae exercitationem neque similique pariatur odit
+                                distinctio doloremque expedita ut veniam eius natus, quis explicabo.</p>
+                            <p class="card-text"><small class="text-body-secondary">2 giorni fa </small></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title d-inline-block align-middle ">
+                                <div class="imgUtente d-inline-block rounded-circle align-middle m-2 "></div>
+                                Eccellente servizio!
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, veniam
+                                magnam! Est sed vitae maiores, quae exercitationem neque similique pariatur odit
+                                distinctio doloremque expedita ut veniam eius natus, quis explicabo.</p>
+                            <p class="card-text"><small class="text-body-secondary">2 giorni fa </small></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title d-inline-block align-middle ">
+                                <div class="imgUtente d-inline-block rounded-circle align-middle m-2 "></div>
+                                Eccellente servizio!
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, veniam
+                                magnam! Est sed vitae maiores, quae exercitationem neque similique pariatur odit
+                                distinctio doloremque expedita ut veniam eius natus, quis explicabo.</p>
+                            <p class="card-text"><small class="text-body-secondary">2 giorni fa </small></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title d-inline-block align-middle ">
+                                <div class="imgUtente d-inline-block rounded-circle align-middle m-2 "></div>
+                                Eccellente servizio!
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, veniam
+                                magnam! Est sed vitae maiores, quae exercitationem neque similique pariatur odit
+                                distinctio doloremque expedita ut veniam eius natus, quis explicabo.</p>
+                            <p class="card-text"><small class="text-body-secondary">2 giorni fa </small></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title d-inline-block align-middle ">
+                                <div class="imgUtente d-inline-block rounded-circle align-middle m-2 "></div>
+                                Eccellente servizio!
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, veniam
+                                magnam! Est sed vitae maiores, quae exercitationem neque similique pariatur odit
+                                distinctio doloremque expedita ut veniam eius natus, quis explicabo.</p>
+                            <p class="card-text"><small class="text-body-secondary">2 giorni fa </small></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title d-inline-block align-middle ">
+                                <div class="imgUtente d-inline-block rounded-circle align-middle m-2 "></div>
+                                Eccellente servizio!
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, veniam
+                                magnam! Est sed vitae maiores, quae exercitationem neque similique pariatur odit
+                                distinctio doloremque expedita ut veniam eius natus, quis explicabo.</p>
+                            <p class="card-text"><small class="text-body-secondary">2 giorni fa </small></p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- testimonial -->
+
+    </div><!-- container -->
+
+    <!--footer-->
+
+    <footer class="border text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>©PiacereViaggiare 2024</p>
+                </div>
+                <div class="col">
+                    <p>Via delle Banane 55 - Palmas(BN)</p>
+                </div>
+                <div class="col">
+                    <p>P.IVA 87619640276</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <p><a href="index.html">Privacy Policy</a></p>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#contact-btm">contatti</button>
+                </div>
+                <div class="col">
+                    <p><a href="index.html">Termini di Utilizzo</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+            aria-hidden="true" id="contact-btm">
+            <div class="modal-dialog modal-sm modal-dialog-centered ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title h5 " id="mySmallModalLabel">Contattaci</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Chiudi finestra modale"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group d-inline-block">
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="surname">Cognome</label>
+                                <input type="text" class="form-control" id="surname">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">eMail</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="object">Oggetto</label>
+                                <input type="text" class="form-control" id="object">
+                            </div>
+                            <div class="form-group">
+                                <label for="input-text">Testo</label>
+                                <textarea class="form-control" id="input-text" rows="5"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-primary mt-2">invia</button>
+                        </div>
+                    </div>
+                    <div class="modal-footer text-center d-inline-block">
+                        <p><small>Tel. 333 5347 037</small></p>
+                        <p><small>piacereviaggi@travel.it</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+/*BODY*/
+body {
+    background-color: rgba(198, 253, 253, 0.973);
+}
+
+/* ---------------------- */
+
+/*NAVBAR*/
+
+nav {
+    background-color: rgb(216, 251, 251);
+}
+
+.navbar a {
+    color: rgb(63, 63, 192);
+    font-weight: 600;
+}
+
+.nav-item {
+    width: max-content;
+}
+
+/* ---------------------- */
+
+/* CONTAINER */
+.container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* ----- generali */
+.card {
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: rgb(88, 96, 247);
+    font-weight: bold;
+}
+
+.row-title{
+    margin-top: 30px;
+}
+
+h4 {
+    color: rgb(88, 96, 247);
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+button{
+    width: 80px;
+}
+
+/* ----- Jumbotron */
+.jumbo-card-text {
+    color: #fff;
+}
+
+.jumbo-card-text h1 {
+    font-weight: bold;
+}
+
+/* ----- Offer-Week */
+
+
+/* ----- Welcome Summer */
+
+
+/* ----- Daily */
+.daily img {
+    width: 100%;
+}
+
+/* ----- lastMinutes */
+
+
+/* ----- testimonial */
+
+.testimonial {
+    background-color: rgb(216, 251, 251);
+    margin-top: 40px;
+}
+
+.imgUtente {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(63, 63, 192);
+}
+
+/* ---------------------- */
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(216, 251, 251);
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+footer .container{
+    margin-top:0;
+    margin-bottom: 10px;;    
+}
+
+.form-group{
+    width: 100%;
+}
+
+.modal-body button{
+    margin-top: 10px;
+}
